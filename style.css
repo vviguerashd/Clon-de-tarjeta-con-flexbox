@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: cornsilk;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* eplicar el view-height */
+    height:100vh;
+}
+
+article{
+    width:50%;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+}
+
+.left img{
+    width: 100%;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.right h3{
+color: darkgray;
+}
+
+.right div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.right div span:first-child{
+    color: darkgreen;
+    font-size: 1.5em;
+}
+
+.right div span:last-child{
+    color: darkgrey;
+    font-size: .8em;
+    text-decoration: line-through;
+}
