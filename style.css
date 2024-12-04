@@ -1,10 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
-    background-color: cornsilk;
+    background-color: #f3eae3;
 }
 
 main{
@@ -16,39 +17,98 @@ main{
 }
 
 article{
-    width:50%;
+    width:570px;
+    height: 430px;
     background-color: white;
     border-radius: 15px;
     display: flex;
+    overflow: hidden;
+    font-family: Montserrat;
+}
+
+article h2{
+    font-family: Fraunces;
+}
+
+article div{
+    width: 285px;
+}
+
+.left{
+    overflow: hidden;
+    width: 285px;
 }
 
 .left img{
-    width: 100%;
+    width: 285px;
+    height: 100%;
+    position: relative; /* Permite mover la imagen */
+    /* left: -20px; */
 }
 
 .right{
     display: flex;
     flex-direction: column;
-    padding: 15px;
+    padding: 25px;
+    width: 285px;
 }
 
-.right h3{
+.right * {
+    padding: 7px 0;
+}
+
+.right h6{
 color: darkgray;
+font-family: montserrat;
+font-weight:300;
+letter-spacing: 4px;
 }
 
-.right div{
+.right h2{
+    padding-right: 85px;
+    }
+
+.right p{
+    padding-right: 45px;
+    color: darkgray;
+}
+
+.right .prices{
+    width: 100%;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+}
+
+.prices{
+    display: flex;
 }
 
 .right div span:first-child{
-    color: darkgreen;
+    padding: 0 0 0 20px;
+    color: #3c8168;
     font-size: 1.5em;
+    font-family: Fraunces;
 }
 
 .right div span:last-child{
+    padding: 0 0 0 20px;
     color: darkgrey;
     font-size: .8em;
     text-decoration: line-through;
+}
+
+button{
+    background-color: #3c8168;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+button img{
+    margin: 0 10px ;
 }
